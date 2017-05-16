@@ -9,6 +9,7 @@
 	//add_image_size('list_articles_thumbs', 300, 500,true) //sería para añadir tamaño estático, cogería el 300
 
 
+//AÑADIR OPCIONES DE PERSONALIZACIÓN EN Apariencia>Personalizar (TUTORIAL: http://blascarr.com/customize-en-wordpress/)
 
 function customizer_init() { //llamada al archivo necesario customizer.php 
  
