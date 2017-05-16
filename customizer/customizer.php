@@ -102,27 +102,6 @@ function customizer_interface($wp_customize){
 
 //////////////////////////////////////////////////
 
-     $wp_customize->add_section('Seccion_Entrada', array( 
-        'title' => __('Entradas', 'BL'),
-        'description'=> 'Entradas de la página',
-        'priority' => 2,
-    ));
-
-     $catEntrada = array('estandar' => 'Estandar', 'columnas' => 'Columnas', 'carta' => 'Carta');
-
-       $wp_customize->add_setting('TipoEntrada', array(
-        'default' => __($catEntrada[0], 'BL'), 
-        'sanitize_callback' => 'my_sanitize_text_field',
-    ));
-
-	$wp_customize->add_control('TipoEntrada', array(
-        'type' => 'select',
-        'choices' => $catEntrada,
-        'label' => __('Categoría:', 'BL'),
-        'section' => 'Seccion_Entrada',
-        'priority' => 1,
-    ));  
-
 
 
 
